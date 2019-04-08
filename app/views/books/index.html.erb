@@ -26,4 +26,12 @@
 
 <br>
 
+<button type="button" onclick="Rails.ajax({url: '/books/random', type: 'get'})" style="padding: 6px">
+  Get Random Book
+</button>
+
+<div class="random-book"></div>
+
+<br>
+
 <%= link_to 'New Book', new_book_path %>

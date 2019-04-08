@@ -7,6 +7,10 @@ class BooksController < ApplicationController
     @books = Book.all
   end
 
+  def random_book
+    @book = Book.all.sample
+  end
+
   # GET /books/1
   # GET /books/1.json
   def show

@@ -1,2 +1,1 @@
-Rails.$('.random-book')[0].innerHTML = ("<%= j (render partial: 'book') %>")
-
+Rails.$('.random-book')[0].innerHTML = ("<%= j (render partial: 'book', locals: { book: @book }) %>")
